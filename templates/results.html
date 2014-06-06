@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shrimpbird" />
+  <meta name="author" content="Shrimpbird">
+  <!-- Facebook Marketing -->
+  <meta property="og:site_name" content="Nicolas Cage Thing" />
+  <meta property="og:title" content="Shrimpbird Nicolas Cage Thing" />
+  <meta property="og:description" content="Interactive search of Nicolas Cage films. Shrimpbird." />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+
+  <link rel="stylesheet" href="./templates/styles.css" />
+  <link rel="stylesheet" href="./templates/res-styles.css" />
+  <link rel="stylesheet" href="./templates/button.css" />
+</head>
+<body>
+{{ range $film := . }}
+<div class="film-container" style="background-image: url({{$film.Poster}}); background-repeat: repeat;">
+  <div class="film-details-container">
+    <div class="film-title-wrap">
+      <div class="film-title">
+	{{$film.Title}} <span class="muted">({{$film.Year}})</span>
+      </div>
+    </div> <!-- /.film-title wrap -->
+    <div class="film-details-wrap">
+      <div class="film-details">
+	<div class="film-detail">
+	  <div class="detail-head">
+	    <div class="outer">
+	      <div class="inner">Rated</div>
+	    </div> 
+	  </div>
+	  <div class="detail-body-wrap">
+	    <div class="detail-body circ">
+	      <div class="mpaa">{{$film.Rated}}</div>
+	    </div>
+	  </div>
+	</div> <!-- /.film-detail -->
+
+	<div class="film-detail">
+	  <div class="detail-head">
+	    <div class="outer">
+	      <div class="inner">Director(s)</div>
+	    </div>
+	  </div>
+	  <div class="detail-body-wrap">
+	    <div class="detail-body directors">
+	      {{range $dir := $film.Director}}
+	      <div class="detail-body-item">
+		{{$dir}}
+	      </div>
+	      {{end}}
+	    </div>
+	  </div>
+	</div> <!-- /.film-detail -->
+
+	<div class="film-detail">
+	  <div class="detail-head">
+	    <div class="outer">
+	      <div class="inner">Genres</div>
+	    </div>
+	  </div>
+	  <div class="detail-body-wrap">
+	    <div class="detail-body genres">
+	      {{range $gen := $film.Genre}}
+	      <div class="detail-body-item">
+		{{$gen}}
+	      </div>
+	      {{end}}
+	    </div>
+	  </div>
+	</div>
+
+	<div class="film-detail">
+	  <!-- needs an if for missing-->
+	  <div class="detail-head">
+	    <div class="outer">
+	      <div class="inner">IMDb Score</div>
+	    </div>
+	  </div>
+	  <div class="detail-body-wrap">
+	    <div class="detail-body circ">
+	      <p class="imdb-rating">
+		<span class="score-wrap">{{$film.ImdbRating}}</span>
+	      </p>
+	      <!--
+	      <p class="imdb-link-wrap">
+		<a class="imdb-link" href="http://imdb.com/title/{{$film.ImdbID}}">Go to IMDb &raquo;</a>
+	      </p>
+	      -->
+	    </div>
+	  </div>
+	</div> <!-- /.film-detail -->
+      </div> <!-- /.film-details -->
+    </div> <!-- /.film-details-wrap -->
+  </div> <!-- /. film-details-conainer -->
+</div>
+{{end}}
+</body>
+</html>

@@ -1,0 +1,172 @@
+* {
+  margin  : 0;
+  padding : 0;
+}
+html {
+  background-color       : #000;
+  background             : radial-gradient(circle, #333, #000);
+  background-repeat      : no-repeat;
+  background-attachment  : fixed;
+}
+body {
+  background-color: transparent;
+}
+
+.trans-white {
+  background: rgba(255,255,255,.7) !important;
+}
+.std-bord {
+  border        : solid #333 1px;
+  border-radius : 5px;
+}
+
+/* DETAIL STYLES */
+.film-container {
+  text-align: center;
+  width: 100%;
+  min-height:300px;
+  padding: 20px;
+  padding-left: 0px;
+}
+
+.film-details-container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 5px 0 0 0;
+  background: transparent;
+  border-radius: 5px;
+  min-height: 298px;
+}
+
+.film-details-wrap {
+  width: 100%;
+}
+
+.film-title-wrap {
+  width: 100%;
+}
+.film-title {
+  min-width: 60%;
+  max-width: 90%;
+  margin: 0 auto;
+
+  background: rgba(255,255,255,.91);
+
+  border: solid #333 1px;
+  border-radius: 25em;
+  font-family: Existence-Light;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.film-details {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.film-details .film-detail {
+  padding: 10px;
+  float: left;
+  width: 160px;
+}
+
+
+.detail-head {
+  width: 100%;
+  text-align:center;
+  font-family: Existence-Light;
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+.detail-head .outer {
+  width: 100%;
+}
+.detail-head .inner {
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 25em;
+  border: solid #444 1px;
+  background: rgba(245,245,245,.93);
+}
+
+.detail-body-wrap {
+  display: inline-block;
+}
+
+.detail-body {
+  border: solid 1px #333;
+  border-radius: 5px;
+  background: rgba(245,245,245,.93);
+  padding: 0 5px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  height: 110px;
+  width: 110px;
+}
+
+.detail-body-item {
+  padding-bottom: 1px;
+  /*
+  border-bottom-style: solid;
+  border-bottom-color: #666;
+  */
+}
+
+.detail-list {
+  list-style-type: none;
+  background-color: transparent;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+.detail-list-item {
+  /*float: left;*/
+  box-shadow: 0 -1px 0 rgba(0,0,0,.2) inset;
+  padding-left:  10px;
+  margin-top:    8px;
+  margin-bottom: 8px;
+}
+/* END DETAIL STYLES */
+
+/* MISC STYLES */
+.muted {
+  color: gray;
+}
+.mpaa {
+  font-size: 2.9em;
+}
+.imdb-rating-head {
+  margin: 5px 0 10px 0;
+  padding-bottom: 2px;
+  border-bottom-style: dashed;
+  border-bottom-color: #999;
+  border-bottom-width: 1px;
+}
+
+.imdb-rating {
+  margin: 3px;
+  font-size: 2.9em;
+}
+.score-wrap {
+  padding: 5px;
+  border: solid #333 1px;
+  border-radius: 50em;
+}
+
+.imdb-link-wrap {
+  margin-top: 20px;
+  text-align: right;
+}
+.imdb-link {
+  font-size: .7em;
+  text-decoration: none;
+}
+.imdb-link:hover {
+  text-decoration: underline;
+}
+
+.circ {
+  border-radius: 50em;
+}
+/* END MISC STYLES */
