@@ -79,7 +79,6 @@ header {
 }
 a {
   color: #66b2ff;
-  text-decoration: none;
 }
 /*** END GENERAL ***/
 /*** FOOTER ***/
