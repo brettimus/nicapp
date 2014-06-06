@@ -18,7 +18,7 @@
 </head>
 <body>
 {{ range $film := . }}
-<div class="film-container" style="background-image: url({{$film.Poster}}); background-repeat: repeat;">
+<div class="film-container"> <!--style="background-image: url({{$film.Poster}}); background-repeat: repeat;" [[IMDb forbades all of these requests. Ha.]]-->
   <div class="film-details-container">
     <div class="film-title-wrap">
       <div class="film-title">
