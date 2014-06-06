@@ -18,7 +18,7 @@
 </head>
 <body>
 <nav>
-  <span onclick="window.location = '/'">&laquo;</span>
+  <span id="go-back" onclick="window.location = '/'">&laquo;</span>
   <a class="exist small" href="/">Search Again</a>
 </nav>
 {{ range $film := . }}
