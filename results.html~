@@ -17,8 +17,94 @@
   <link rel="stylesheet" href="./static/css/button.css" />
 </head>
 <body>
+<nav>
+     <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">               
+        <div class="navbar-header">      
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+	          <span class="icon-bar"></span> 
+          </button>                                      
+	    <a class="navbar-brand" href="#">BRAND</a>
+	    </div>  
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>   
+            <li><a href="#">About</a></li>            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+		Featured
+		<b class="caret"></b></a>
+              <ul class="dropdown-menu">                                                                                        
+                <li class="dropdown-header">Articles You Should Read</li>
+                <li class="divider"></li>
+		<li> Top Articles </li>
+              </ul>
+            </li>
+          </ul>
+
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Elsewhere<b class="caret"></b></a>
+              <ul class="dropdown-menu">                                                                                        
+                <li><a href="http://sin.reed.edu/webapps/">SIN Home</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header"><a href="http://sin.reed.edu/webapps/finance/">Finance</a></li>
+              </ul>
+            </li>
+	        
+	        <li class="dropdown">
+              <a href="#" class="dropdown-toggle js-activated" data-toggle="dropdown">
+		<span class="glyphicon glyphicon-user"></span>
+		<span class="smaller-font">
+		    User Name <b class="caret"></b>
+		    </span>
+		      </a>
+	            <ul class="dropdown-menu">
+		      <li role="presentation" class="dropdown-header">
+			  Look in the Mirror
+		      </li>  
+		      <li><a href="#">My Profile</a></li>
+		      <li class="divider"></li>
+		      <li role="presentation" class="dropdown-header">
+			  Customize Your Sin
+			  </li>
+		      <li><a href="#">
+			      <span class="glyphicon glyphicon-cog"> </span>
+			          Settings
+			      </a></li>
+		      <li class="divider"></li>
+		      
+		      <li role="presentation" class="dropdown-header">
+			  GTFO
+			  </li>
+		      <li>
+			  <a href="/webapps/logout">
+			        <span class="glyphicon glyphicon-plane"></span>
+				    <span class="">Logout</span>
+				      </a>
+		      </li>  
+		      <li class="divider"></li>
+		      <li class="divider"></li>
+		            </ul>
+		        </li>
+
+<!-- social -->
+    <li>
+              <a class="social" href="" target="_blank">
+		<img src="" height="" width="" alt="">
+		      </a>
+	          </li>
+<!-- end social -->
+  </ul>
+	  </div> <!-- /.nav-collapse -->
+      </div>
+    </div> <!-- /.nav -->
+    </nav>
+
 {{ range $film := . }}
-<div class="film-container" style="background-image: url({{$film.Poster}}); background-repeat: repeat;">
+<div class="film-container"> <!--style="background-image: url({{$film.Poster}}); background-repeat: repeat;" [[IMDb forbades all of these requests. Ha.]]-->
   <div class="film-details-container">
     <div class="film-title-wrap">
       <div class="film-title">

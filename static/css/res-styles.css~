@@ -10,6 +10,16 @@ html {
 }
 body {
   background-color: transparent;
+  
+}
+
+nav {
+  position: fixed;
+  line-height: 10px;
+  background: rgba(0,0,0,.05);
+  color: rgb(245,245,245);
+  text-align: left;
+  padding: 1px;
 }
 
 .trans-white {
@@ -106,11 +116,8 @@ body {
 }
 
 .detail-body-item {
-  padding-bottom: 1px;
-  /*
-  border-bottom-style: solid;
-  border-bottom-color: #666;
-  */
+  padding-bottom: 2px;
+  font-size: .9em;
 }
 
 .detail-list {

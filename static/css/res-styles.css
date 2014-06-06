@@ -10,6 +10,18 @@ html {
 }
 body {
   background-color: transparent;
+  
+}
+
+nav {
+  position: fixed;
+  line-height: 10px;
+  background: rgba(0,0,0,.05);
+  color: rgb(245,245,245);
+  text-align: left;
+  padding: 1px;
+  width: 100%;
+  z-index: 999;
 }
 
 .trans-white {
