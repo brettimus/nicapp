@@ -75,7 +75,6 @@
 	</div>
 
 	<div class="film-detail">
-	  <!-- needs an if for missing-->
 	  <div class="detail-head">
 	    <div class="outer">
 	      <div class="inner">
@@ -86,7 +85,7 @@
 	  <div class="detail-body-wrap">
 	    <div class="detail-body circ">
 	      <p class="imdb-rating">
-		{{if eq $film.ImdbRating 0}}
+		{{if eq $film.ImdbRating 0.0}}
 		  N/A
 		{{else}} 
 		  {{$film.ImdbRating}}
