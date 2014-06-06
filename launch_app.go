@@ -29,7 +29,7 @@ func home(w http.ResponseWriter, r *http.Request) {
      if err != nil {
        log.Fatal("Oops. Parsing form failed.", err)
      }
-     http.ServeFile(w, r, r.URL.Path[1:] + 'templates/')
+     http.ServeFile(w, r, r.URL.Path[1:] + "templates/")
 }
 
 func related(w http.ResponseWriter, r *http.Request) {
