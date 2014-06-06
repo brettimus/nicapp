@@ -1,5 +1,5 @@
 
-NichApp
+NicApp
 =======
 Powered by [Orchestrate](https://orchestrate.io), written with [gorc](https://github.com/orchestrate-io/gorc).
 
