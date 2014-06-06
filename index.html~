@@ -170,12 +170,12 @@
       </li>
       <li>
 	<a href="http://github.com/">
-	  <img src="./static/icons/GitHub-Mark-Light-32px.png" />
+	  <img src="./icons/GitHub-Mark-Light-32px.png" />
 	</a>
       </li>
       <li>
 	<a href="http://golang.org/">
-	  <img src="./static/icons/gopher-blue-small.png" />
+	  <img src="./icons/gopher-blue-small.png" />
 	</a>
       </li>
       <li>
