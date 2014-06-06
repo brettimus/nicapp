@@ -35,7 +35,13 @@
 	  </div>
 	  <div class="detail-body-wrap">
 	    <div class="detail-body circ">
-	      <div class="mpaa">{{$film.Rated}}</div>
+	      <div class="mpaa">
+		{{if eq $film.Rated "PG-13"}}
+		  PG13
+		{{else}}
+		  {{$film.Rated}}
+		{{end}}
+	      </div>
 	    </div>
 	  </div>
 	</div> <!-- /.film-detail -->
