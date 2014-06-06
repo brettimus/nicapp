@@ -1,0 +1,10 @@
+{
+	"ImportPath": "nicapp",
+	"GoVersion": "go1.2",
+	"Deps": [
+		{
+			"ImportPath": "github.com/orchestrate-io/gorc",
+			"Rev": "6528ad45e4e856200106c189d9e3212f485698c8"
+		}
+	]
+}
