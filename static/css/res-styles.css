@@ -16,7 +16,7 @@ body {
 nav {
   position: fixed;
   line-height: 10px;
-  background: rgba(0,0,0,.05);
+  background: rgba(0,0,0,.45);
   color: rgb(245,245,245);
   text-align: left;
   padding: 1px;

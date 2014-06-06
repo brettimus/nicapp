@@ -20,6 +20,8 @@ nav {
   color: rgb(245,245,245);
   text-align: left;
   padding: 1px;
+  width: 100%;
+  z-index: 999;
 }
 
 .trans-white {
