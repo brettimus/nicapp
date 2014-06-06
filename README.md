@@ -2,6 +2,10 @@
 NichApp
 =======
 Powered by [Orchestrate](https://orchestrate.io), written with [gorc](https://github.com/orchestrate-io/gorc).
+
+This file only pertains to the 'populate' folder, which contains the scripts used to create the
+Orchestrate database. 
+Documentation is still needed on the application itself.
 ***
 ## Dependencies
 ### [github.com/hailiang/htmlquery](http://github.com/hailiang/htmlquery)
@@ -56,7 +60,7 @@ Visit the [Orchestrate API Docs](https://orchestrate.io/docs/api/?go) if you're 
 | ImdbID     | (string)      | IMDB Unique ID   |
 
 Missing data are represented as "N/A", with the exception of ImdbRating, 
-which is 0 if empty.
+which is 0 if unavailable.
 
 ### Graph
 #### Graph Relations are as follows:
