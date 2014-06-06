@@ -106,8 +106,11 @@ body {
 }
 
 .detail-body-item {
-  padding-bottom: 2px;
-  font-size: .9em;
+  padding-bottom: 1px;
+  /*
+  border-bottom-style: solid;
+  border-bottom-color: #666;
+  */
 }
 
 .detail-list {
