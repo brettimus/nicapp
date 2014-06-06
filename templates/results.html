@@ -86,7 +86,7 @@
 	  <div class="detail-body-wrap">
 	    <div class="detail-body circ">
 	      <p class="imdb-rating">
-		{{$film.ImdbRating}}
+		{{if eq $film.ImdbRating 0 }}N/A{{else}}{{$film.ImdbRating}}{{end}}
 	      </p>
 	      <!--
 	      <p class="imdb-link-wrap">
