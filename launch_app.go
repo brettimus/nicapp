@@ -11,9 +11,9 @@ import(
 
 )
 
-var apiKey = os.Getenv("GORCKEY") 
+var apiKey = "9edc13f3-b67a-4d1d-bf96-a8159822d44f"
 
-var templates = template.Must(template.ParseFiles("./templates/results.html","./templates/index.html"))
+var templates = template.Must(template.ParseFiles("./templates/results.html"))
 
 func main() {
      http.HandleFunc("/", home)
